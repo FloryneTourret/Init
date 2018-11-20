@@ -1,0 +1,2 @@
+kill -KILL $(jobs -p)
+# kill -KILL $! -> Tue le dernier process lancé en background, le flag permet de tuer et non de terminer. La commande tue tous les process en bg
