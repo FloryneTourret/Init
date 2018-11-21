@@ -1,0 +1,16 @@
+ [ + ]  avahi-daemon
+ [ + ]  cron
+ [ + ]  cups
+ [ + ]  cups-browsed
+ [ + ]  dbus
+ [ + ]  hddtemp
+ [ + ]  kmod
+ [ + ]  lightdm
+ [ + ]  lm-sensors
+ [ + ]  minissdpd
+ [ + ]  network-manager
+ [ + ]  procps
+ [ + ]  rsyslog
+ [ + ]  speech-dispatcher
+ [ + ]  ssh
+ [ + ]  udev
