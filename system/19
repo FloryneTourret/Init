@@ -15,4 +15,5 @@
  [ + ]  ssh
  [ + ]  udev
 
-# upstart services
+# upstart services (service --status-all | grep "+" | awk '{print $4}')
+# un service qui se lance automatiquement est un daemon
