@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ "$#" -ne 1 ]; then
-	echo "usage: ./03 --help"
-	exit 0
+if [ "$#" == 0 ]; then
+	"Invalid arguments, fore more informnation use ./03 --help"
+	exit 1
 fi
 
 if [ $1 == "--help" ]; then
@@ -36,7 +36,7 @@ fi
 
 if [ "$#" -ne 2 ]; then
 	echo "usage: ./03 --help"
-	exit 0
+	exit 1
 fi
 
 if [ $1 == "youtube" ]; then
