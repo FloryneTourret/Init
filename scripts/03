@@ -1,0 +1,58 @@
+#!/bin/bash
+
+if [ $1 == "--help" ]; then
+	echo "usage : ./03 <app> [<query>]"
+	echo
+	echo "All apps available : "
+	echo "Google                      -> ./03 google \"<query>\""
+	echo "Youtube                     -> ./03 youtube \"<query>\""
+	echo "Github                      -> ./03 github \"<query>\""
+	echo "Stackoverflow               -> ./03 stackoverflow \"<query>\""
+	echo "Slack app                   -> ./03 slack"
+	echo "Spotify app                 -> ./03 spotify"
+	echo "Visual Studio Code app      -> ./03 vscode"
+	exit 0
+fi
+
+if [ $1 == "vscode" ]; then
+	open /Applications/Visual\ Studio\ Code.app
+	exit 0
+fi
+
+if [ $1 == "spotify" ]; then
+	open /Applications/Spotify.app
+	exit 0
+fi
+
+if [ $1 == "slack" ]; then
+	open /Applications/Slack.app
+	exit 0
+fi
+
+if [ "$#" -ne 2 ]; then
+	echo "usage: ./03 --help"
+	exit 0
+fi
+
+if [ $1 == "youtube" ]; then
+	open "https://www.youtube.com/results?search_query=$2"
+	exit 0
+fi
+
+if [ $1 == "google" ]; then
+	open "https://www.google.fr/search?q=$2"
+	exit 0
+fi
+
+if [ $1 == "github" ]; then
+	open "https://github.com/search?q=$2"
+	exit 0
+fi
+
+if [ $1 == "stackoverflow" ]; then
+	open "https://stackoverflow.com/search?q=$2"
+	exit 0
+fi
+
+echo "Invalid search, use ./03 --help for more informations"
+exit 1
