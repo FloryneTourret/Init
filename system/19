@@ -14,3 +14,5 @@
  [ + ]  speech-dispatcher
  [ + ]  ssh
  [ + ]  udev
+
+# upstart services
